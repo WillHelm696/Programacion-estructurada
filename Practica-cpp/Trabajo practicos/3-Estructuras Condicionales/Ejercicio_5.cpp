@@ -1,65 +1,29 @@
 /*
- * 9. Cambiar un numero entero con el mismo valor pero en romanos.
- * M= 1000
- * D = 500
- * C = 100
- * L = 50
- * X = 10
- * V = 5
- * I = 1
+ * 5. Escriba un programaque lea la entrada estandar de un caracter e indique en la salida esandar si el
+ * caracter es una vocal minusculo o no
  */
 
 #include <iostream>
 using namespace std;
 int main() {
-    int numero,unidad,centena, decena,millar;
-    cout<<"Ingrese un numero: ";cin>>numero;
-    unidad=numero%10,numero/=10;
-    decena=numero%10,numero/=10;
-    centena=numero%10,numero/=10;
-    millar=numero%10,numero/=10;
+    char letra;
+    cout<<"Ingrese un caracter: ";cin>>letra;
 
-    switch (millar) {
-        case 1:cout<<"M";break;
-        case 2:cout<<"MM";break;
-        case 3:cout<<"MMM";break;
+    switch(letra) {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':cout<<"Es una vocal minuscula"; break;
+        default: cout<<"No es una vocal minuscula"; break;
     }
-    switch (centena) {
-        case 1:cout<<"C";break;
-        case 2:cout<<"CC";break;
-        case 3:cout<<"CCC";break;
-        case 4:cout<<"CD";break;
-        case 5:cout<<"D";break;
-        case 6:cout<<"DC";break;
-        case 7:cout<<"DCC";break;
-        case 8:cout<<"DCCC";break;
-        case 9:cout<<"CM";break;
-    }
-    switch (decena) {
-        case 1:cout<<"X";break;
-        case 2:cout<<"XX";break;
-        case 3:cout<<"XXX";break;
-        case 4:cout<<"XL";break;
-        case 5:cout<<"L";break;
-        case 6:cout<<"LX";break;
-        case 7:cout<<"LXX";break;
-        case 8:cout<<"LXX";break;
-        case 9:cout<<"XC";break;
-    }
-    switch (unidad) {
-        case 1:cout<<"I";break;
-        case 2:cout<<"II";break;
-        case 3:cout<<"III";break;
-        case 4:cout<<"IV";break;
-        case 5:cout<<"V";break;
-        case 6:cout<<"VI";break;
-        case 7:cout<<"VII";break;
-        case 8:cout<<"VIII";break;
-        case 9:cout<<"IX";break;
-    }
+
+    return 0;
 }
 
 /*
- * 10: Mostrar los meses del año, pidiento al usuario un numero entre (1-12), y mostrar
- * el mes al que coresponde
+ * 6. Escriba un programa que lea la entrada estandar un caracter e indique en la
+ * salida estandar si el caracter es una vocal minuscula, es una vocal mayuscula
+ * o no es una vocal
  */
+

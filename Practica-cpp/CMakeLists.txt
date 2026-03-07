@@ -3,4 +3,4 @@ project(Programacion_Estructurada)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Programacion_Estructurada "Trabajo practicos/3-Estructuras Condicionales/Ejercicio_5.cpp")
+add_executable(Programacion_Estructurada "Trabajo practicos/3-Estructuras Condicionales/Ejercicio_7.cpp")

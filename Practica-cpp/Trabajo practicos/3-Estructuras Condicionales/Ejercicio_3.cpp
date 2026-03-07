@@ -1,29 +1,22 @@
 /*
- * 5. Escriba un programaque lea la entrada estandar de un caracter e indique en la salida esandar si el
- * caracter es una vocal minusculo o no
+ *  3. Realice un programa que lea un valor entero y determine si se trata de un numero par o impar
  */
 
 #include <iostream>
 using namespace std;
 int main() {
-    char letra;
-    cout<<"Ingrese un caracter: ";cin>>letra;
-
-    switch(letra) {
-        case 'a':
-        case 'e':
-        case 'i':
-        case 'o':
-        case 'u':cout<<"Es una vocal minuscula"; break;
-        default: cout<<"No es una vocal minuscula"; break;
+    int numero;
+    cout<<"Ingrese un numero: ";cin>>numero;
+    if (numero%2==0) {
+        cout<<"El numero es Par";
+    }else if (numero%2==1) {
+        cout<<"El numero es Impar";
+    }else {
+        cout<<"El numero es 0";
     }
-
     return 0;
 }
 
 /*
- * 6. Escriba un programa que lea la entrada estandar un caracter e indique en la
- * salida estandar si el caracter es una vocal minuscula, es una vocal mayuscula
- * o no es una vocal
+ *  4. Comprobar si un numero digitado por el usuario es positivo o negativo.
  */
-

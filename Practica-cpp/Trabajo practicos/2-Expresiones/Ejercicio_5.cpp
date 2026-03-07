@@ -1,21 +1,23 @@
 /*
- * 9. Realize un programa que calcule el valor que toma la sigiente funcion para unos valores dados de x e y:
+ * 5. Escriba un fragmento de programa que intercambie los valores de dos variables
  */
 
 #include<iostream>
-#include<math.h>
 using namespace std;
-int main() {
-    float x,y, resultado;
-    cout<<"Ingrese el valor de x: ";cin>>x;
-    cout<<"Ingrese el valor de y: ";cin>>y;
-    resultado=(sqrt(x))/(pow(y,2)-1);
-    cout<<"El resultado es: "<<resultado<<endl;
-    return 0;
+
+int main () {
+    int a,b,aux;
+
+    cout<<"Ingrese el primer valor x: ";cin>>a;
+    cout<<"Ingrese el primer valor y: ";cin>>b;
+
+    aux=a; a=b; b=aux;
+
+    cout<<"El nuevo valor de x es "<<a<<endl;
+    cout<<"El nuevo valor de y es "<<b<<endl;
 }
+
 /*
- * 10. Escriba un programa que que calcule las soluciones de una ecuacion d esegundo grado de la forma ax²+bx+c=0
- * teniendo en cuenta que:
- * x1 = (-b+sqrt(pow(b,2)-4*a*c))/(2*a)
- * x2 = (-b-sqrt(pow(b,2)-4*a*c))/(2*a)
-*/
+ * 6. Escriba un programa que lea la nota final de cuatro alumno y calcule la nota final media de los cuatro alumno
+ */
+

@@ -5,10 +5,9 @@
 #include <iostream>
 using namespace std;
 int main() {
-
     int edad;
-    cin>>"Digite su edad";
-    cout<<edad;
+    cout<<"Digite su edad :";
+    cin>>edad;
     if(edad>=18 && edad<=25) {
         cout<<"Su edad esta en el Rango";
     }else {

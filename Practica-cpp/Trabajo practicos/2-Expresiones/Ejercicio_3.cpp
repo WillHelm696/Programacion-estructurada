@@ -1,23 +1,27 @@
 /*
- * 5. Escriba un fragmento de programa que intercambie los valores de dos variables
+* 3. Escribe la sigiente expresion como expresion en C++:
+ *  c) ( a + b/c ) / ( d + e/f )
  */
-
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main () {
-    int a,b,aux;
+int main() {
+    float a,b,c,d,e,f,resultado;
+    cout<<"Ingrese el valor de a: ";cin>>a;
+    cout<<"Ingrese el valor de b: ";cin>>b;
+    cout<<"Ingrese el valor de c: ";cin>>c;
+    cout<<"Ingrese el valor de d: ";cin>>d;
+    cout<<"Ingrese el valor de e: ";cin>>e;
+    cout<<"Ingrese el valor de f: ";cin>>f;
 
-    cout<<"Ingrese el primer valor x: ";cin>>a;
-    cout<<"Ingrese el primer valor y: ";cin>>b;
+    resultado=( a + b/c ) / ( d + e/f );
+    cout<<"\nResultado: "<<resultado;
 
-    aux=a; a=b; b=aux;
-
-    cout<<"El nuevo valor de x es "<<a<<endl;
-    cout<<"El nuevo valor de y es "<<b<<endl;
+    return 0;;
 }
 
-/*
- * 6. Escriba un programa que lea la nota final de cuatro alumno y calcule la nota final media de los cuatro alumno
- */
 
+/*
+ * 4. Escribe la sigiente expresion como expresion en C++:
+ *  d) a + b/(c-d)
+ */
