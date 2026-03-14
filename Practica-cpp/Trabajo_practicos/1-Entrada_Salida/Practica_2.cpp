@@ -12,4 +12,5 @@ int main() {
     cin>>precio;
     precio = precio *iva;
     cout<<"El precio con IVA es "<<precio<<endl;
+    return 0;
 }

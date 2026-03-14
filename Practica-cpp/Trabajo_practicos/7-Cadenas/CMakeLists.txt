@@ -3,5 +3,4 @@ project(Programacion_Estructurada)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(5-Ejercicio_1 Ejercicio_1.cpp)
-add_executable(5-Ejercicio_3 Ejercicio_3.cpp)
+add_executable(7-Ejercicio_1 Ejercicio_1.cpp)

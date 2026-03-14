@@ -1,0 +1,28 @@
+/*
+* Ejercicio 3: Hacer una matriz de tipo entera de 2 * 2, llenarla de números y luego copiar todo su
+* contenido hacia otra matriz.
+ */
+#include <iostream>
+using namespace std;
+int main() {
+    int numeros[2][2]={{1,2},{3,4}};
+    int matriz2[2][2];
+    for(int i=0;i<2;i++) {
+        for(int j=0;j<2;j++) {
+            matriz2[i][j]=numeros[i][j];
+        }
+    }
+    for(int i=0;i<2;i++) {
+        for(int j=0;j<2;j++) {
+            cout<<matriz2[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+
+    cin.get();
+    return 0;
+}
+/*
+ * Ejercicio 4:  Hacer una matriz preguntando al usuario el numero de filas y columnas,llenarla de números
+ * aleatorios, copiar el contenido a otra matriz y por último mostrarla en pantalla.
+ */

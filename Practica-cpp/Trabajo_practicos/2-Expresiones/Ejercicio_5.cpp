@@ -15,6 +15,7 @@ int main () {
 
     cout<<"El nuevo valor de x es "<<a<<endl;
     cout<<"El nuevo valor de y es "<<b<<endl;
+    return 0;
 }
 
 /*
