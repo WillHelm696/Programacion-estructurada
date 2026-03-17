@@ -1,0 +1,5 @@
+//Comparar cadenas - Función strcmp()
+
+/*
+ *
+ */
