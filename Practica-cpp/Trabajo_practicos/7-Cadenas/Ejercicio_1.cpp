@@ -9,11 +9,20 @@ int main() {
 
     longitud=strlen(palabra);
     cout<<"El numero de elementos de la cadena es: "<<longitud<<endl;
+
+    /*
+     * 1. Hacer un programa que pida al usuario que digite una cadena de caracteres, luego verifique la longitud de la
+     * cadena, y si esta a 10 caracteres mostrarla en pantalla, caso contrario no mostrarlo
+     */
+    char cadena[50];
+
+    cout<<"Ingrese una palabra: ";
+    cin.getline(cadena,50,'\n');
+    if (strlen(cadena) <=10 ) {
+        cout<<cadena<<endl;
+    }
     cin.get();
     return 0;
+
 }
 
-/*
- * Hacer un programa que pida al usuario que digite una cadena de caracteres, luego verifique la longitud de la
- * cadena, y si esta a 10 caracteres mostrarla en pantalla, caso contrario no mostrarlo
- */
