@@ -10,10 +10,9 @@ int main() {
     if (strcmp(cadena1,cadena2)==0) {
         cout << "Son Iguales" << endl;
     }
-/*
- * 3 Pedir al ususario que digite 2 cadenas de caracteres, e indicar si ambas cadenas son iguales , en caso de no serlo
- * cual es el mayor alfabeticamente
- */
+    /*
+     * 3 Pedir al ususario que digite 2 cadenas de caracteres, e indicar si ambas cadenas son iguales , en caso de no serlo
+     * cual es el mayor alfabeticamente
 
     char cadena3[20];
     char cadena4[20];
@@ -30,6 +29,7 @@ int main() {
     }else {
         cout << "La cadena 1 es mayor " << endl;
     }
+    */
     cin.get();
     return 0;
 }

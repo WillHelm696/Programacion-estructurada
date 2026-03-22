@@ -25,6 +25,8 @@ int main() {
         }
         cout<<endl;
     }
+    cin.get();
+    return 0;
 }
 /*
  * Ejercicio 6: Realice un programa que calcule la suma de dos matrices cuadradas de 3x3.
