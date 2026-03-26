@@ -14,11 +14,10 @@ int particion(int arr[], int bajo, int alto) {
         if (arr[j] <= pivot) {
             i++;
             miSwap(arr,i,j);
-/*            cout <<j<<"[";
+            cout <<j<<"[";
             for (int i = 0; i < 10; i++) {
                 cout << arr[i] << (i < 9 ? ", ":" ]\n");
             }
-*/
         }
     }
     miSwap(arr,i+1,alto);
@@ -28,8 +27,9 @@ int particion(int arr[], int bajo, int alto) {
 void quicksort(int arr[], int bajo, int alto) {
     if (bajo < alto) {
         int pivot = particion(arr,bajo,alto);
-//        cout << "pivot: " << pivot<< " de " << bajo<<" - "<<alto<<endl;
+        cout << "pivot: " << pivot<< " de " << bajo<<" - "<<pivot-1<<endl;
         quicksort(arr,bajo,pivot-1);
+        cout << "pivot: " << pivot<< " de " << pivot+1<<" - "<<alto<<endl;
         quicksort(arr,pivot+1,alto);
     }
 }

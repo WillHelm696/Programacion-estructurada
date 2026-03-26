@@ -1,8 +1,11 @@
 package Ejercicio_En_Clase;
 
 public class Quicksort {
+
+    public Quicksort() {}
+
     public static void main() {
-        int[] arr={6,1,3,7,9,4,8,5,2};
+        int[] arr={1,2,3,4,5,6,7,8,9};
         System.out.println("Quicksort");
         System.out.println("Array : ");
         imprimir(arr);
@@ -23,7 +26,8 @@ public class Quicksort {
             if (arr[j] <= pivot) {
                 i++;
                 miSwap(arr,i,j);
-/*            cout <<j<<"[";
+                System.out.println(j+"[");
+/*            cout <<;
             for (int i = 0; i < 10; i++) {
                 cout << arr[i] << (i < 9 ? ", ":" ]\n");
             }

@@ -6,25 +6,28 @@ package Ejercicio_En_Clase;
 import java.util.Scanner;
 
 public class Burbuja{
+
+    public Burbuja() {}
+
     public static void main(String[] arg) {
         Scanner entrada = new Scanner(System.in);
         int[] arr = new int[10];
-        llenar(arr,10);
+        llenar(arr);
         System.out.println("Matriz Original");
-        imprimir(arr,10);
+        imprimir(arr);
         System.out.println("Busco Mayor");
-        buscarMayor(arr,10);
+        buscarMayor(arr);
         System.out.println( "Busco Menor");
-        buscarMenor(arr,10);
+        buscarMenor(arr);
         System.out.println( "Matriz Oirdenada Mayor a menor");
-        burbujaMayorMenor(arr,10);
-        imprimir(arr,10);
+        burbujaMayorMenor(arr);
+        imprimir(arr);
         System.out.println("Matriz Oirdenada Mayor a menor");
-        burbujaMenorMayor(arr,10);
-        imprimir(arr,10);
+        burbujaMenorMayor(arr);
+        imprimir(arr);
     }
-    public static void imprimir(int arr[],int n) {
-
+    public static void imprimir(int arr[]) {
+        int n = arr.length;
         System.out.print("[");
         for (int i = 0; i < n; i++) {
             System.out.print( arr[i]+(i < n-1 ? ", " : " "));
@@ -32,7 +35,8 @@ public class Burbuja{
         System.out.println( "]");
     }
 
-    public static void burbujaMayorMenor(int arr[], int n) {
+    public static void burbujaMayorMenor(int arr[]) {
+        int n = arr.length;
         int aux;
         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - i - 1; j++) {
@@ -46,7 +50,8 @@ public class Burbuja{
     }
 
 
-    public static void burbujaMenorMayor(int arr[],int n) {
+    public static void burbujaMenorMayor(int arr[]) {
+        int n = arr.length;
         int aux=0;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n - i - 1; j++) {
@@ -58,7 +63,8 @@ public class Burbuja{
             }
         }
     }
-    public static void buscarMayor(int arr[], int n) {
+    public static void buscarMayor(int arr[]) {
+        int n = arr.length;
         int mayor=arr[0];
         for (int j = 0; j < n ; j++) {
             if (arr[j] >= mayor) {
@@ -67,7 +73,8 @@ public class Burbuja{
         }
         System.out.println(mayor);
     }
-    public static void buscarMenor(int arr[], int n) {
+    public static void buscarMenor(int arr[]) {
+        int n = arr.length;
         int menor=arr[0];
         for (int j = 0; j < n; j++) {
             if (arr[j] <= menor) {
@@ -77,7 +84,8 @@ public class Burbuja{
         System.out.println( menor);
     }
 
-    public static void llenar(int arr[],int n) {
+    public static void llenar(int arr[]) {
+        int n = arr.length;
         int num;
         for (int i = 0; i < n; i++) {
             num = (int)(Math.random() * 50) + 1;
