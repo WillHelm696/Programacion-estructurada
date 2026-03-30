@@ -88,7 +88,7 @@ public class Burbuja{
         int n = arr.length;
         int num;
         for (int i = 0; i < n; i++) {
-            num = (int)(Math.random() * 50) + 1;
+            num = (int)(Math.random() * 2000) + 1;
             arr[i] = num;
         }
     }
