@@ -1,4 +1,4 @@
-package Trabajo_Practico_3;
+package Trabajo_Practico_3.ArrayClasico;
 
 //(NumPrimos2.java) Almacenar en un arreglo de 10 posiciones los 10 números
 //primos comprendidos entre 100 y 300. Luego mostrarlos en pantalla.

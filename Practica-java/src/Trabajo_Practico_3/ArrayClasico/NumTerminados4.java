@@ -1,5 +1,4 @@
-package Trabajo_Practico_3;
-import java.util.Scanner;
+package Trabajo_Practico_3.ArrayClasico;
 //(NumTerminados4.java) Leer 10 números enteros, almacenarlos en un arreglo y
 //determinar en qué posiciones se encuentran los números terminados en 4
 
